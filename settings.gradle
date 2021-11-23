@@ -1,0 +1,5 @@
+rootProject.name='xzlRouter'
+include ':app'
+include ':libs'
+include ':testmodule1'
+include ':testmodule2'
