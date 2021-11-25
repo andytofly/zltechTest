@@ -1,6 +1,9 @@
 package com.zltech.zlrouter.app
 
+//import com.zltech.zlrouter.libs.providers.module1.Module1Providers
+import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
@@ -9,8 +12,8 @@ import com.zltech.zlrouter.R
 import com.zltech.zlrouter.annotation.Route
 import com.zltech.zlrouter.inject.ZlRouter
 import com.zltech.zlrouter.libs.BaseFragment2
-//import com.zltech.zlrouter.libs.providers.module1.Module1Providers
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 @Route(path = "/app/entry")
 class MainActivity : AppCompatActivity() {
@@ -29,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         button1.setOnClickListener {
             ZlRouter.getInstance().build("/module1/module1main").withContext(this)
                 .withString("msg", "zwf是猪~~~~").call { result ->
-                    Log.d("msg","result!! "+result)
+                    Log.d("msg", "result!! " + result)
                 }
         }
 

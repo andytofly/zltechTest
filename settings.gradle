@@ -1,5 +1,6 @@
-rootProject.name='xzlRouter'
+rootProject.name='zltechTest'
 include ':app'
 include ':libs'
 include ':testmodule1'
 include ':testmodule2'
+include ':widget'

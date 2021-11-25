@@ -40,6 +40,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
-    kapt "com.github.andytofly:zltech_router:${rootProject.ext.versions["zltech_router_version"]}"
+//    kapt "com.github.andytofly:zltech_router:${rootProject.ext.versions["zltech_router_version"]}"
+    kapt "com.github.andytofly.zltech_router:zlrouter_compiler:1.0.3"
     api project(":libs")
 }

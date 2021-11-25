@@ -44,6 +44,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation project(':testmodule1')
     implementation project(':testmodule2')
-    kapt "com.github.andytofly:zltech_router:${rootProject.ext.versions["zltech_router_version"]}"
+//    kapt "com.github.andytofly:zltech_router:${rootProject.ext.versions["zltech_router_version"]}"
+    kapt "com.github.andytofly.zltech_router:zlrouter_compiler:1.0.3"
     api project(":libs")
 }
